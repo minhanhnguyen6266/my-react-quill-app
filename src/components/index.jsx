@@ -11,9 +11,10 @@ import {
   regexHashtag,
 } from "../helper/index";
 import quillEmoji from "react-quill-emoji";
-import "react-quill-emoji/dist/quill-emoji.css";
 import Toolbar from "./Toolbar";
 import Loading from "./Loading";
+import "font-awesome/css/font-awesome.min.css";
+import "react-quill-emoji/dist/quill-emoji.css";
 
 // Register emoji
 Quill.register(
@@ -34,9 +35,9 @@ Video.sanitize = function (url) {
   return originalSanitize ? originalSanitize(url) : url;
 };
 Quill.register(Video, true);
-const defaultValue = new Delta(data);
 
 export default function MyQuill() {
+  const defaultValue = new Delta(data);
   const quillRef = useRef(null);
   const [value, setValue] = useState(defaultValue);
   const [htmlPreview, setHtmlPreview] = useState("");

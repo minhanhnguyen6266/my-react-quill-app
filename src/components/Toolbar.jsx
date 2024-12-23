@@ -5,7 +5,8 @@ function Toolbar() {
   const icons = Quill.import("ui/icons");
   icons["link"] = '<i class="fa fa-link" style="color: blue;"></i>';
   icons["image"] = '<i class="fa fa-image" style="color: red;"></i>';
-  icons["video"] = '<i class="fa fa-video" style="color: green;"></i>';
+  icons["video"] = '<i class="fa fa-play" style="color: green;"></i>';
+  icons["emoji"] = '<i class="fa fa-play" style="color: green;"></i>';
 
   return (
     <>
@@ -14,14 +15,14 @@ function Toolbar() {
           <button className="ql-emoji"></button>
         </span>
 
-        {/* <span className="ql-formats">
+        <span className="ql-formats">
           <select className="ql-size">
             <option value="small">Nhỏ</option>
             <option selected>Thường</option>
             <option value="large">To</option>
             <option value="huge">Khổng lồ</option>
           </select>
-        </span> */}
+        </span>
 
         <span className="ql-formats">
           <button className="ql-bold"></button>

@@ -41,20 +41,21 @@ const defaultValue = [
 ];
 
 const formats = [
-  "header",
+  // "header",
   "bold",
   "italic",
   "underline",
   "strike",
   "list",
   // "bullet",
-  "indent",
+  // "indent",
   "link",
   "image",
   "video",
-  "color",
-  "background",
+  // "color",
+  // "background",
   "size",
+  "emoji",
 ];
 
 const fetchFile = async (dataURL) => {
